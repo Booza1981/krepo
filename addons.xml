@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.booza" name="booza" version="1.0.0" provider-name="https://www.facebook.com/groups/1669367206670159/">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">booza Wizard</summary>
+    <description lang="en">Wizard for installing booza builds</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+    <addon id="repository.booza" name="Booza Repo" version="1.0.0" provider-name="Booza">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Booza Repo">
+            <info compressed="false">https://raw.githubusercontent.com/Booza1981/krepo/master_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Booza1981/krepo/master_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Booza1981/krepo/master_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Updates your booza repo</summary>
+            <description>simples</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+</addons>
